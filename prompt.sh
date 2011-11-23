@@ -1,0 +1,1 @@
+PS1="\\A-$(tput setaf 9)\\]$(/usr/local/rvm/bin/rvm-prompt)\\[$(tput sgr0)\\] \\[$(tput setaf 6)\\]\\u\\[$(tput sgr0)\\]:\[$(tput setaf 3)\\]\\w\[$(tput sgr0)\\]$ "
