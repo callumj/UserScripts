@@ -1,0 +1,9 @@
+[alias]
+  	url =!sh -c 'HEAD=`git rev-parse HEAD` && SHA1=`[ "$0" = "sh" ] && echo $HEAD || echo $0` && echo `~/.user_data/githuburl.sh`"/commit/"${SHA1}'
+
+[user]
+	email = callum@callumj.com
+	name = Callum Jones
+[core]
+	excludesfile = /Users/callumj/.gitignore_global
+	editor = vi
