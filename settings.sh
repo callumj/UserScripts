@@ -10,7 +10,8 @@ alias masterpull="git checkout master && git pull; git checkout development"
 alias foundation="consular start foundation"
 alias autonetdisable="sudo launchctl unload -w /System/Library/LaunchDaemons/com.callumj.autoswitch.network.plist"
 alias autonetenable="sudo launchctl load -w /System/Library/LaunchDaemons/com.callumj.autoswitch.network.plist"
+alias txt="macruby ~/.user_data/scripts/txt.macruby.rb"
 
-CUSTOM_PATH=$HOME/bin:/usr/local/sbin
+CUSTOM_PATH=$HOME/bin:/usr/local/sbin:$HOME/Applications/MongoDB/bin
 export EDITOR=mate
 export TERM_EDITOR=vi
