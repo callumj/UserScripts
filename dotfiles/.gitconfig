@@ -1,5 +1,8 @@
 [alias]
   	url =!sh -c 'HEAD=`git rev-parse HEAD` && SHA1=`[ "$0" = "sh" ] && echo $HEAD || echo $0` && echo `~/.user_data/githuburl.sh`"/commit/"${SHA1}'
+	co = checkout
+	cm = commit
+	rb = rebase
 
 [user]
 	email = callum@callumj.com
@@ -7,3 +10,10 @@
 [core]
 	excludesfile = /Users/callumj/.gitignore_global
 	editor = vi
+	quotepath = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

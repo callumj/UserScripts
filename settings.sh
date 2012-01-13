@@ -1,3 +1,5 @@
+source ~/.user_data/git-completion.bash
+
 alias mdbgo="sh ~/.user_data/startmongo.sh"
 alias memgo="memcached -vvvvv"
 alias passgo="passenger start"
