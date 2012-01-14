@@ -13,6 +13,7 @@ alias foundation="consular start foundation"
 alias autonetdisable="sudo launchctl unload -w /System/Library/LaunchDaemons/com.callumj.autoswitch.network.plist"
 alias autonetenable="sudo launchctl load -w /System/Library/LaunchDaemons/com.callumj.autoswitch.network.plist"
 alias txt="macruby ~/.user_data/scripts/txt.macruby.rb"
+alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 
 CUSTOM_PATH=$HOME/bin:/usr/local/sbin:$HOME/Applications/MongoDB/bin
 export EDITOR=mate
