@@ -3,6 +3,7 @@ source ~/.user_data/git-completion.bash
 alias mdbgo="sh ~/.user_data/startmongo.sh"
 alias memgo="memcached -vvvvv"
 alias passgo="passenger start"
+alias prodgo="bundle exec rake assets:precompile && passenger start -e production"
 alias cpyg="git url | tr -d '\n' | pbcopy"
 alias reload="source ~/.bash_profile"
 alias ls="ls -l"

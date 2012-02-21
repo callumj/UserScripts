@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+interface_set = [ {:id => "en0", :name => "Ethernet"},
+	{:id => "en1", :name => "Wireless"}
+]
+
+regex = /inet ((\d{1,3}[.]){3,3}\d{1,3})/
+
+interface_set.each do |interface|
+	addr_grep = (`ifconfig #{interface[:id]} | grep inet `).strip
+	if addr_grep.length > 0
+		match_data = regex.match(addr_grep)
+		if match_data.length > 0
+			puts "#{interface[:name]}: #{match_data[1]}"
+			exit
+		end
+	end
+end

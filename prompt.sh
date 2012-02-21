@@ -70,7 +70,7 @@ _prompt_underline_colour() {
 }
 
 __bash_vcprompt_on() {
-  local vcprompt_value="$(/usr/local/bin/vcprompt -f "%b")"
+  local vcprompt_value="$(vcprompt -f "%b")"
   [[ -n "$vcprompt_value" ]] && echo -n " on branch $vcprompt_value"
 }
 
