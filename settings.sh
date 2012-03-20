@@ -16,6 +16,7 @@ alias autonetenable="sudo launchctl load -w /System/Library/LaunchDaemons/com.ca
 alias txt="macruby ~/.user_data/scripts/txt.macruby.rb"
 alias edit="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 alias mdprev="markdown $1 | bcat;"
+alias dbs="echo 'show dbs' | mongo"
 
 CUSTOM_PATH=$HOME/bin:/usr/local/sbin:$HOME/Applications/MongoDB/bin
 export EDITOR=mate
