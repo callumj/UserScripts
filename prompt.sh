@@ -82,10 +82,8 @@ __bash_vcprompt_dirty() {
 }
 
 __bash_rvm_prompt_additions() {
-  if [[ -x ~/.rvm/bin/rvm-prompt ]]; then
-    local interpreter="$(~/.rvm/bin/rvm-prompt)"
-    [[ -n "$interpreter" ]] && echo -n "$interpreter "
-  fi
+  local interpreter="$(rbenv version-name)"
+  [[ -n "$interpreter" ]] && echo -n "$interpreter "
 }
 
 # Each part of the prompt.
