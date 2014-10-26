@@ -1,5 +1,3 @@
-source ~/.user_data/git-completion.bash
-
 alias cpyg="git url | tr -d '\n' | pbcopy"
 alias reload="source ~/.bash_profile"
 alias ls="ls -l -a"
